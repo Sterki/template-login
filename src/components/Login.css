@@ -1,0 +1,98 @@
+.login {
+  height: 100vh;
+  display: flex;
+}
+.login__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+}
+.login__img {
+  flex: 0.5;
+  display: none;
+}
+@media (min-width: 768px) {
+  .login__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .login__img {
+    flex: 0.5;
+    display: block;
+  }
+}
+.login__img > img {
+  height: 30rem;
+  object-fit: contain;
+}
+.login__formular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.5;
+}
+.login__formular > .MuiTextField-root {
+  margin: 0.5rem;
+  width: 20rem;
+  transition: all 0.2s;
+}
+.login__formular > h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--lightblue);
+}
+.login__formular > button {
+  padding: 0.4rem;
+  border: none;
+  background-color: var(--lightblue);
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.9;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+.login__formular > button:hover {
+  background-color: #5d57db;
+}
+.login__parraf {
+  width: 20rem;
+}
+.login__parraf > p {
+  margin-top: 1rem;
+  color: gray;
+}
+.login__links {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+.login__parraf > button {
+  padding: 0.4rem;
+  border: none;
+  background-color: var(--lightblue);
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.9;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+.login__parraf > button:hover {
+  background-color: #5d57db;
+}
